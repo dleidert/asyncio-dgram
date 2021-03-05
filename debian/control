@@ -1,0 +1,26 @@
+Source: asyncio-dgram
+Section: python
+Priority: optional
+Maintainer: Greg Albrecht <oss@undef.net>
+Uploaders: Daniel Leidert <dleidert@debian.org>
+Build-Depends: debhelper-compat (= 12),
+               dh-python,
+               python3-all,
+               python3-setuptools
+Standards-Version: 4.5.1
+Homepage: https://github.com/jsbronder/asyncio-dgram
+Vcs-Browser: https://github.com/dleidert/asyncio-dgram
+Vcs-Git: https://github.com/dleidert/asyncio-dgram.git
+Rules-Requires-Root: no
+Testsuite: autopkgtest-pkg-python
+
+Package: python3-asyncio-dgram
+Architecture: any
+Provides: ${python3:Provides}
+Depends: ${misc:Depends},
+         ${python3:Depends},
+         ${shlibs:Depends}
+Description: higher level datagram support for asyncio
+ Simple wrappers that allow one to 'await read()' from datagrams. The goal of
+ this package is to make implementing common patterns that use datagrams simple
+ and straight-forward while still supporting more esoteric options.

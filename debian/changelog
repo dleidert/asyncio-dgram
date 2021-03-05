@@ -1,0 +1,5 @@
+asyncio-dgram (1.2.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #983819)
+
+ -- Daniel Leidert <dleidert@debian.org>  Thu, 04 Mar 2021 01:28:33 +0100
